@@ -1,0 +1,3 @@
+#include <stdio.h>
+extern char _binary_data_keys_cr_keyp_start;
+extern char _binary_data_keys_cr_keyp_end;

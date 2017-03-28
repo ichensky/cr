@@ -1,0 +1,12 @@
+{cr_server}
+1. load data from server
+(load {cr_server}/users >> users)
+(load {cr_server}/bitcoins >> bitcoins)
+(delete {cr_server}/bitcoins)
+(remove_dublicates (users bitcoins))
+
+(check_who_payed 
+(save [user_id]-(decrypt [user_password]) >> users_payed)
+(upload users_payed > {cr_server}/users_payed)
+)
+

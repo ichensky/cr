@@ -1,0 +1,6 @@
+#include<gcrypt.h>
+
+void cr_hash_calc(const unsigned char *str,
+	  const size_t str_len,
+	  unsigned char **hash,
+	  size_t *hash_len);

